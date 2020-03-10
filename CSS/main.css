@@ -1,0 +1,64 @@
+*{ /* Browse reset (very basic one.*/
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body { padding-top: 3rem; } /* Offset enough space for the fixed nav.*/
+
+.grat-text{ 
+    color: darkgray; 
+}
+
+.salmon-text {
+    color: salmon;
+}
+
+.indigo-text {
+    color: indigo;
+}
+
+.big-text {
+    font-size: 2.25rem;
+}
+
+/*Responsive navigation*/
+nav {
+    display: block;
+    width: 100%;
+    height:auto;
+    min-height: 2rem;
+    max-height: 100vh;
+    padding:0;
+    margin:0 ;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom: auto;
+    left: 0;
+    background: rgba(55, 55, 55, 1);
+    overflow: auto;
+}
+
+nav ul{ 
+    list-style: none;
+    overflow:auto;
+    width:100%;
+    height: 100vh;
+    max-height: 0;
+    transition: 0.3s ease all;
+}
+
+.nav-open ul {
+    max-height: calc(100vh - 2rem);
+}
+
+.menu-button {
+    position: absolute;
+    top: 0.15rem;
+    right: 0.85rem;
+    bottom: auto;
+    left:auto;
+}
